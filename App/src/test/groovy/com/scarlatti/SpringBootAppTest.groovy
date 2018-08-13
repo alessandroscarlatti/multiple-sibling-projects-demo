@@ -1,6 +1,6 @@
 package com.scarlatti
 
-import com.scarlatti.lib2.SpringBootApp
+import com.scarlatti.app.SpringBootApp
 import org.junit.Test
 import org.springframework.boot.test.context.SpringBootTest
 import spock.lang.Specification

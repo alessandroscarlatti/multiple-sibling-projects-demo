@@ -1,4 +1,4 @@
-package com.scarlatti.lib2;
+package com.scarlatti.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

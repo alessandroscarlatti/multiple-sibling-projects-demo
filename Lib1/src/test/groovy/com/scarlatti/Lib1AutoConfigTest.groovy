@@ -1,6 +1,6 @@
 package com.scarlatti
 
-import com.scarlatti.lib2.Lib1AutoConfig
+import com.scarlatti.app.Lib1AutoConfig
 import org.junit.Test
 import org.springframework.boot.test.context.SpringBootTest
 import spock.lang.Specification

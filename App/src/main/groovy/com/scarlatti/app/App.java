@@ -1,4 +1,4 @@
-package com.scarlatti.lib2;
+package com.scarlatti.app;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,12 +17,20 @@ public class App implements CommandLineRunner {
 
     private static final Logger log = LoggerFactory.getLogger(App.class);
 
+    private Lib2 lib2;
+
+    public App(Lib2 lib2) {
+        this.lib2 = lib2;
+    }
+
     @Override
     public void run(String... args) throws Exception {
         log.info("App.run() args = [{}]", args);
 
         // invoke each of the components from the "child" apps.
         new Lib1().run();
-        new Lib2().run();
+
+        // injected from autoconfig
+        lib2.run();
     }
 }
